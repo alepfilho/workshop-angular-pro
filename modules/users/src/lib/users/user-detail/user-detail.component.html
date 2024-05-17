@@ -2,7 +2,7 @@
   <h1 class="logo text-white font-bold text-2xl">Workshop Angular</h1>
 </header>
 <main class="p-5 flex items-center justify-center gap-5">
-  <div *ngIf="user$ | async as user" class="bg-white p-5 rounded-xl shadow-md w-full md:w-2/5">
+  <div *ngIf="user$ | async as user" class="bg-white p-5 rounded-xl shadow-md w-full md:w-full">
     <div class="flex items-center gap-3 mb-5">
       <a class="bg-blue-500 px-5 py-2 rounded-xl text-xs text-white font-bold" [routerLink]="['/users']">Visualizar</a>
     </div>
