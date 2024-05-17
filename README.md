@@ -1,7 +1,11 @@
 # WorkshopAngular
 
 ## Projeto criado seguindo lives do Angular Pro 2024
+Evento elaborado por Paolo Almeida e Andrew Rosário
+
 [Link mentoria](https://techexperts.pro/)
+
+[Link Vercel](https://workshop-angular-pro.vercel.app/home)
 Não irei comprar pois atualmente trabalho com PHP e estou adquirindo conhecimento para entrar como jr.
 
 ## Curso em 3 aulas ensinou como criar um projeto, adicionar NXjs, criar uma "rota filha" e fazer um teste unitário.
