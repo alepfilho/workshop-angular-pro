@@ -29,16 +29,12 @@ describe('UsersComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   it('should list users', () => {
-    const users: HTMLElement[] = fixture.nativeElement.querySelectorAll('li');
+    const users: HTMLElement[] = fixture.nativeElement.querySelectorAll('tbody tr');
     expect(users.length).toBe(mockUser.length);
 
-    users.forEach((user, index) => {
-      expect(user.textContent).toContain(mockUser[index].name);
+    users.forEach((tdElement, index) => {
+      expect(tdElement.querySelector('.name')?.textContent).toContain(mockUser[index].name);
     });
     
   });
