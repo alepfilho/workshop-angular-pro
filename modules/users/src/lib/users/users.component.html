@@ -2,8 +2,8 @@
   <h1 class="logo text-white font-bold text-2xl">Workshop Angular</h1>
 </header>
 <main class="text-center p-5 flex items-center justify-center gap-5">
-  <div class="w-full">
-    <table class="table-auto p-5 bg-gray-100 rounded-xl">
+  <div class="w-full md:w-1/2">
+    <table class="w-full p-5 bg-gray-100 rounded-xl">
       <thead>
         <tr>
           <th>Imagem</th>
@@ -14,7 +14,7 @@
       <tbody class="divide-y">
         @for(user of users$ | async; track user.id) {
         <tr>
-          <td class="p-3">
+          <td class="p-3 flex items-center justify-center">
             <img
               [src]="user.avatar"
               [alt]="user.name"
